@@ -1,0 +1,11 @@
+@if (loading) {
+    <h2>Cargando...</h2>
+}
+@if (!loading) {
+    <img src="{{product?.image}}" alt="{{product?.title}}">
+    <p>{{product?.id}}</p>
+    <p>{{product?.title}}</p>
+    <p>{{product?.category}}</p>
+    <p>{{product?.price}}</p>
+    <p>{{product?.description}}</p>
+} 
